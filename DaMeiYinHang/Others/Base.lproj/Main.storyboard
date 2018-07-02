@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14109" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="49e-Tb-3d3">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--find-->
+        <scene sceneID="fgA-Hh-GGy">
+            <objects>
+                <viewControllerPlaceholder storyboardName="find" id="b4b-Ud-Syd" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="产品" image="second.png" selectedImage="second" id="vyB-hR-Ggx"/>
+                </viewControllerPlaceholder>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="u9Y-pq-y0S" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="750" y="226"/>
+        </scene>
+        <!--account-->
+        <scene sceneID="638-Fa-5Lf">
+            <objects>
+                <viewControllerPlaceholder storyboardName="account" id="XM5-Vb-HuX" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="首页" image="first.png" selectedImage="first" id="0yF-gf-948"/>
+                </viewControllerPlaceholder>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="WvX-Wt-ql1" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="770" y="-288"/>
+        </scene>
+        <!--addId-->
+        <scene sceneID="ejA-LP-iMM">
+            <objects>
+                <viewControllerPlaceholder storyboardName="add" referencedIdentifier="addId" id="3X0-2Q-sfX" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Item" id="Mrg-mn-Gl4"/>
+                </viewControllerPlaceholder>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="A48-Lm-tyN" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="759" y="-32"/>
+        </scene>
+        <!--Add Tab Bar Controller-->
+        <scene sceneID="yl2-sM-qoP">
+            <objects>
+                <tabBarController id="49e-Tb-3d3" customClass="AddTabBarController" sceneMemberID="viewController">
+                    <tabBar key="tabBar" contentMode="scaleToFill" id="W28-zg-YXA">
+                        <rect key="frame" x="0.0" y="975" width="768" height="49"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
+                        <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
+                    </tabBar>
+                    <connections>
+                        <segue destination="XM5-Vb-HuX" kind="relationship" relationship="viewControllers" id="LLh-SS-das"/>
+                        <segue destination="3X0-2Q-sfX" kind="relationship" relationship="viewControllers" id="m9k-jb-oZq"/>
+                        <segue destination="b4b-Ud-Syd" kind="relationship" relationship="viewControllers" id="wlm-ny-QWn"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="HuB-VB-40B" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="0.0" y="0.0"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="first" width="30" height="30"/>
+        <image name="first.png" width="16" height="16"/>
+        <image name="second" width="30" height="30"/>
+        <image name="second.png" width="16" height="16"/>
+    </resources>
+</document>

@@ -1,0 +1,6 @@
+framework module Pods_DaMeiYinHang {
+  umbrella header "Pods-DaMeiYinHang-umbrella.h"
+
+  export *
+  module * { export * }
+}
